@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+  /* background-color: #f8f9fa;  A light grey background */
+  background: radial-gradient(circle at center, #0f3460 0%, #1a1a2e 80%);
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: white;
+}
+
+.bg-dark {
+    /*background-color: #343a40 !important; /* Dark grey background */
+    /*background-color: #526C8E !important;*/ 
+    background-color: #526C8E !important;
+    width: 100%; /* Ensure full width */
+}
+
+.text-light {
+    color: #f8f9fa !important; /* Dark white text */
+}
+
+.text-section:not(:last-child) {
+    margin-bottom: 20px; /* Add space between the text sections */
+}
+
+.canvas-container {
+    /*display: flex;
+    justify-content: center; */
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#currentPriceContainer{
+   /* align: left;*/
+    text-align: left;
+    /*font-weight: bold;*/
+}
