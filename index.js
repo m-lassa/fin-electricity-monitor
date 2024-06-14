@@ -12,24 +12,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", async (req, res) => {
 
-   // const prices = await fetchElectricityPrices();
-
-   // const data = {
-   //     prices: prices
-   // };
-   // console.log(data.prices);
     res.render("index.ejs"); 
     
   });
 
   app.get("/info", async (req, res) => {
 
-    // const prices = await fetchElectricityPrices();
- 
-    // const data = {
-    //     prices: prices
-    // };
-    // console.log(data.prices);
      res.render("info.ejs"); 
      
    });
@@ -69,7 +57,7 @@ cron.schedule('0 0 * * *', async () => {
 
   // Middleware to handle 404 errors
 app.use((req, res, next) => {
-    //res.status(404).json({ error: 'Not Found' });
+
     const data = {
             status: 404, 
             message: "Not Found"

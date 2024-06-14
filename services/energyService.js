@@ -4,8 +4,7 @@ import xml2js from 'xml2js';
 import { DOMParser } from 'xmldom';
 import xpath from 'xpath';
 
-const apiUrl = 'https://web-api.tp.entsoe.eu/api'; 
-//const apiKey = '6960ba2f-1974-4448-86f6-e05ad8326432'; 
+const apiUrl = 'https://web-api.tp.entsoe.eu/api';  
 const apiKey = process.env.ENTSOE_API_KEY;
 
 const buildRequestUri = () => {
