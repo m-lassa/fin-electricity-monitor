@@ -62,6 +62,9 @@ const formattedDate = new Intl.DateTimeFormat('fi-FI', {
                     },
                     options: {
 
+                        responsive: true,
+                        maintainAspectRatio: false,
+
                         plugins: {
                                     legend: {
                                         display: false,
@@ -76,15 +79,16 @@ const formattedDate = new Intl.DateTimeFormat('fi-FI', {
                             y: {
                                 beginAtZero: true,
                                 ticks: {
-                                                    color: 'white', // Change tick mark text color for Y-axis
+                                                    //color: 'white', // Change tick mark text color for Y-axis
+                                                    display: false
                                 },
                                 title: {
-                                    display: true,
+                                    display: !isMobile(),
                                     text: 'Hinta (snt/kWh)',
                                     fontColor: 'white',
                                     color: 'white',
                                     font: {
-                                    size: 17,
+                                    size: 15,
                                     }
                                 }
                             },
@@ -108,3 +112,8 @@ const formattedDate = new Intl.DateTimeFormat('fi-FI', {
             })
             .catch(error => console.error('Virhe:', error));
     });
+
+
+    function isMobile() {
+        return window.innerWidth <= 768; // Example breakpoint for mobile devices
+    }

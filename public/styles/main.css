@@ -23,11 +23,12 @@ h2 {
     /*background-color: #343a40 !important; /* Dark grey background */
     /*background-color: #526C8E !important;*/ 
     background-color: #526C8E !important;
+   
     width: 100%; /* Ensure full width */
 }
 
 .text-light {
-    color: #f8f9fa !important; /* Dark white text */
+    color: #f8f9fa !important;  /* Dark white text */
 }
 
 .text-section:not(:last-child) {
@@ -39,6 +40,15 @@ h2 {
     justify-content: center; */
     align-items: center;
     margin-bottom: 30px;
+    width: 100%;
+    height: max-content;
+    max-width: 810px;
+    margin: 0 auto; /* Center the container */
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
 }
 
 #currentPriceContainer{
