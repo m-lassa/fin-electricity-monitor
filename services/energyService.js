@@ -34,7 +34,7 @@ const fetchElectricityPrices =  async () => {
         const pointElements = doc.getElementsByTagName('Point');
         const points = xpath.select('//Point', doc);
 
-        const prices = [];
+        let prices = [];
         for (let i = 0; i < pointElements.length; i++) {
           const priceAmountElement = pointElements[i].getElementsByTagName('price.amount')[0];
           if (priceAmountElement) {
@@ -47,6 +47,7 @@ const fetchElectricityPrices =  async () => {
         }
         // Print the extracted prices
         //console.log(prices);
+        prices = prices.slice(0, 24);
         return prices;
   //})
   //.catch(error => {
