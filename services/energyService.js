@@ -27,9 +27,6 @@ const fetchElectricityPrices =  async () => {
 
         const response =  await axios.get(uri);
 
-   //     axios.get(uri)
-  //.then(response => {
-
         const doc = new DOMParser().parseFromString(response.data, 'text/xml');
         const pointElements = doc.getElementsByTagName('Point');
         const points = xpath.select('//Point', doc);
@@ -45,14 +42,9 @@ const fetchElectricityPrices =  async () => {
             prices.push(priceAmount);
           }
         }
-        // Print the extracted prices
-        //console.log(prices);
+
         prices = prices.slice(0, 24);
         return prices;
-  //})
-  //.catch(error => {
-  //  console.error('Error making request:', error);
-  //});
   
 };
 

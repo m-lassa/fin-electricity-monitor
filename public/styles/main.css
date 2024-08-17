@@ -2,7 +2,7 @@
 
 
 body {
-  /* background-color: #f8f9fa;  A light grey background */
+
   background: radial-gradient(circle at center, #0f3460 0%, #1a1a2e 80%);
   height: 100vh;
   font-family: 'Roboto', sans-serif;
@@ -20,8 +20,6 @@ h2 {
 }
 
 .bg-dark {
-    /*background-color: #343a40 !important; /* Dark grey background */
-    /*background-color: #526C8E !important;*/ 
     background-color: #526C8E !important;
    
     width: 100%; /* Ensure full width */
@@ -36,8 +34,6 @@ h2 {
 }
 
 .canvas-container {
-    /*display: flex;
-    justify-content: center; */
     align-items: center;
     margin-bottom: 30px;
     width: 100%;
@@ -52,7 +48,5 @@ canvas {
 }
 
 #currentPriceContainer{
-   /* align: left;*/
     text-align: left;
-    /*font-weight: bold;*/
 }

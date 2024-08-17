@@ -47,14 +47,14 @@ const formattedDate = new Intl.DateTimeFormat('fi-FI', {
                                     const value = tooltipItem.yLabel;
 
                                     // Calculate the interval based on the tooltipItem's index
-                                    const hour = tooltipItem.index + 1; // Assuming labels are 1-based; adjust if 0-based
+                                    const hour = tooltipItem.index + 1; 
                                     const startHour = hour - 1; // Start of the interval
                                     const endHour = hour; // End of the interval
                                     // Format the interval string, e.g., "12:00-13:00"
                                     const interval = `${startHour}:00-${endHour}:00`;
 
                                     return `${datasetLabel} for ${interval}: €${value} per kWh`;
-                                    //return `${datasetLabel}: €${value} per kWh`;
+
                                 }
                             }
                         }
@@ -79,7 +79,7 @@ const formattedDate = new Intl.DateTimeFormat('fi-FI', {
                             y: {
                                 beginAtZero: true,
                                 ticks: {
-                                                    //color: 'white', // Change tick mark text color for Y-axis
+                                                    //color: 'white',
                                                     display: false
                                 },
                                 title: {
@@ -115,5 +115,5 @@ const formattedDate = new Intl.DateTimeFormat('fi-FI', {
 
 
     function isMobile() {
-        return window.innerWidth <= 768; // Example breakpoint for mobile devices
+        return window.innerWidth <= 768; 
     }
